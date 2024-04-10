@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Student Page </title>
+</head>
+<body>
+<h1>This is Students Page </h1>
+<ul>{% for student in students %}
+    <li>
+        <h3><a href="">{{student.first_name}} | {{ student.last_name}} </a></h3>
+
+    </li>
+    {% endfor %}
+</ul>
+<a href="{% url 'landing' %}"> Back</a>
+
+</body>
+</html>
